@@ -1,1 +1,85 @@
 /***Style***/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#App {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(1, 42, 74) 0px, #000000 100px, #000000 100px, #000000 100%);
+}
+
+.my-container {
+    padding: 50px 50px 50px 50px;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    overflow: overlay
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px black;
+    background: rgb(83, 83, 83);
+    border-radius: 10px;
+    overflow: overlay
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(1, 42, 74);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 26, 44);
+}
+
+#header {
+    background-color: rgb(36, 30, 30);
+    color: white;
+    height: 70px;
+}
+
+.User-IMG img {
+    margin: 12px 8px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 1px 2px rgb(133, 133, 133));
+}
+
+#notifications {
+    background-color: rgb(1, 42, 74);
+    color: white;
+    height: 50px;
+}
+
+#search-bar {
+    background-color: rgb(36, 30, 30);
+    height: 50px;
+}
+
+/***Icon***/
+
+.fa-circle-notch,
+.fa-message,
+.fa-ellipsis-vertical {
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+.fa-bell-slash {
+    color: white;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
