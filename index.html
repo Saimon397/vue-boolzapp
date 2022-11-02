@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/49b8372efe.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +19,16 @@
 </head>
 
 <body>
-    <!--ID VueJs-->
     <div id="App">
         <div class="my-container">
             <div class="row justify-content-center align-items-lg-stretch h-100 g-0">
-                <!-- Colonna SX -->
+                <!--Colonna SX-->
                 <div class="col-12 col-md-4 d-md-block h-100">
-                    <!-- Section User -->
+                    <!--Section User-->
                     <div id="header">
                         <div class="User-IMG rounded-circle d-flex justify-content-between align-items-center">
                             <div>
-                                <img class="rounded-circle" src="./img/sins.jpg" alt="">
+                                <img class="rounded-circle" src="./img/sins.jpg" alt="User-img">
                                 <span class="fw-bold">Leonardo Pozzan</span>
                             </div>
                             <div class="px-4">
@@ -66,3 +63,64 @@
                         </div>
                     </div>
                     <!--/Section Search-->
+                    <!--Section Contacts -->
+                    <div class="contacts">
+                        <div class="d-flex align-items-center justify-content-between p-2 contact rounded rounded-2">
+                            <div class="User-IMG rounded-circle">
+                                <img class="rounded-circle m-0" src="./img/avatar_io.jpg" :alt="">
+                            </div>
+                            <div class="last-message">
+                                <p class="m-0 text-secondary"></p>
+                            </div>
+                            <div class="flex-fill mx-2">
+                                <span></span>
+                                <p class="m-0 text-secondary"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Section Contacts-->
+                <!--/Colonna SX-->
+                <!--Colonna DX-->
+                <div class="col-12 col-md-8 d-md-block h-100">
+                    <div id="header" class="User-IMG d-flex align-items-center ">
+                        <a href="#">
+                            <i class="fa-solid fa-angle-left px-3 d-md-none"></i>
+                        </a>
+                        <img class="rounded-circle mx-2" src="./img/avatar_1.jpg" alt="">
+                        <div>
+                            <p class="m-0"></p>
+                            <span class="lastMessage">Ultimo accesso:
+
+                            </span>
+                        </div>
+
+                        <div class="flex-fill text-end px-3">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="messages-container d-flex flex-column rounded-3 p-2 background mx-1">
+                        <div class="message-text">
+                            <p class="m-0 text-end text-secondary"></p>
+                        </div>
+
+                    </div>
+                    <div class="footer d-flex align-items-center">
+                        <div class="input-group px-0 align-items-center">
+                            <a href="#"><i class="fa-regular fa-face-smile"></i></a>
+                            <input type="text" class="form-control rounded-3" placeholder="Scrivi un messaggio"
+                                aria-label="Username" aria-describedby="basic-addon1" @keyup.enter="sendMessage()">
+                            <a href="#"><i class="fa-solid fa-microphone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

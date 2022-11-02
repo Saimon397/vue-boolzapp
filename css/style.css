@@ -50,7 +50,7 @@
     margin: 12px 8px;
     width: 50px;
     height: 50px;
-    filter: drop-shadow(2px 1px 2px rgb(133, 133, 133));
+    filter: drop-shadow(4px 4px 4px rgb(1, 42, 74));
 }
 
 #notifications {
@@ -64,8 +64,96 @@
     height: 50px;
 }
 
+.contacts {
+    background-color: rgb(36, 30, 30);
+    height: calc(100% - 170px);
+    overflow: auto;
+}
+
+.contact {
+    background-color: rgb(36, 30, 30);
+    color: white;
+    position: relative;
+}
+
+.contact:hover {
+    box-shadow: inset 0px 0px 15px rgb(1, 42, 74);
+}
+
+.active {
+    background-color: rgb(1, 42, 74);
+}
+
+.messages-container {
+    height: calc(100% - 120px);
+    box-shadow: inset 0px 0px 15px rgba(37, 37, 37, 0.23);
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.footer {
+    background-color: rgb(36, 30, 30);
+    height: 50px;
+}
+
+.lastAccess {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.lastMessage {
+    width: 65%;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lastDate {
+    font-size: 10px;
+}
+
+.message-text {
+    word-wrap: break-word;
+    position: relative;
+    margin: 20px 20px;
+    padding: 15px 15px 0px 15px;
+    min-width: 20%;
+    max-width: 50%;
+    border-radius: 10px;
+    font-size: 15px;
+    filter: drop-shadow(5px 5px 5px rgb(62, 9, 114));
+}
+
+.message-text.sent {
+    align-self: end;
+    background-color: rgb(1, 42, 74);
+    color: white;
+}
+
+.message-text.received {
+    align-self: start;
+    background-color: rgb(36, 30, 30);
+    color: white;
+}
+
+.background {
+    background-image: url(../img/jbVvEcAi.jpg);
+    background-size: contain;
+}
+
 /***Icon***/
 
+.fa-face-smile,
+.fa-microphone {
+    color: white;
+    padding: 0 20px;
+}
+
+.fa-paperclip,
+.fa-ellipsis-vertical,
 .fa-circle-notch,
 .fa-message,
 .fa-ellipsis-vertical {

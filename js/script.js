@@ -1,5 +1,5 @@
-const app = new Vue({
-    element: "#App",
+const { createApp } = Vue; ({
+    el: "#App",
     data: {
         contacts: [{
             id: 1,
@@ -163,4 +163,4 @@ const app = new Vue({
             ],
         }
         ],
-    
+   
