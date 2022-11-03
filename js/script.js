@@ -216,7 +216,7 @@ const app = createApp({
             const noMessage = contact.messages.length > 0 ? contact.messages.at(-1).message : 'Nessun Messaggio.';
             return noMessage
         },
-        showChat() {
+        mobileView() {
             this.contacts[this.currentIndex].visible = !this.contacts[this.currentIndex].visible
         },
     },
